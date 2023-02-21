@@ -92,39 +92,26 @@ body {
 }
 
 .navbar {
-    background-color: #03093A;
-}
-
-.navbar-brand {
-    color: #5ec0a8;
-}
-
-/* por algun motivo que desocnozco, el hover de la brand no me toma el hover. Intente de varias maneras: HELP! */
-.navbar-nav .navbar-brand:hover {
-    color: #5ec0a8;
+    Background-color: #03093A;
 }
 
 .nav-ul li a {
-    color: #5ec0a8;
-    text-decoration: none;
-}
-
-li a:visited {
-    color: #5ec0a8;
-    text-decoration: none;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #5ec0a8;
+    Color: white;
 }
 
 .navbar-nav .nav-link {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
+    Font-family: "titanium web", sans-serif;
+    color: #5ec0a8;
+    text-align: right;
 }
 
 .navbar-nav .nav-link.active {
-    color: #58618B;
+    Color: #58618B;
+}
+
+.navbar-nav .nav-link:hover {
+    Color: #58618B;
+    Background-color: #03093A;
 }
 
 .navbar-toggler {
