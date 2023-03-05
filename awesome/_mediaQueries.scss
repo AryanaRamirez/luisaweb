@@ -1,0 +1,153 @@
+/* Defino las media queries | Breakpoints */
+/* 36rem equivalen al sm de Bootstrap 576px */
+@media screen and (min-width: 0rem) and (max-width: 36rem) {
+    .ftMain {
+        justify-content: space-around;
+    }
+
+    .listLinks {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ftRrss {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pageintro {
+        text-align: center;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .gridDesignBio {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .biografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 0.8rem;
+    }
+
+    .container-img {
+        width: 100%;
+    }
+
+    .size {
+        width: 100%;
+        height: auto;
+    }
+
+    .gridDesignForm {
+        display: grid;
+        grid-template-columns: 94%;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .contenido {
+        border-radius: $big-radius;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* 62rem equivalen al lg de Bootstrap 992px */
+@media screen and (min-width: 37rem) and (max-width: 62rem) {
+    .ftMain {
+        justify-content: space-evenly;
+    }
+
+    .pageintro {
+        text-align: right;
+        padding-right: 0.4rem;
+    }
+
+    .gridDesignBio {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .biografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 2rem 0.8rem;
+    }
+
+    .container-img {
+        width: 100%;
+    }
+
+    .size {
+        width: 100%;
+        height: auto;
+    }
+
+    .gridDesignForm {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .contenido {
+        border-radius: $big-radius;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Para resoluciones mayores a 992px */
+@media screen and (min-width: 62.063rem) {
+    .ftMain {
+        justify-content: space-evenly;
+    }
+
+    .pageintro {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-right: 1.4rem;
+    }
+
+    .gridDesignBio {
+        display: grid;
+        grid-template-columns: 40% 50% 10%;
+        grid-template-rows: auto;
+        padding: 4rem 0;
+    }
+
+    .biografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .gridDesignForm {
+        display: grid;
+        grid-template-columns: 16% 44% 40%;
+        grid-template-rows: auto;
+        padding: 2rem 0;
+    }
+
+    .contenido {
+        border-radius: $big-radius;
+        display: flex;
+        flex-direction: column;
+        padding-right: 2.4rem;
+    }
+}

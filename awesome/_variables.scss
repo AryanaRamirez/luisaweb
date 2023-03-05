@@ -1,0 +1,29 @@
+/// Variables del body
+$background: rgb(3, 9, 58);
+$background-gradient: linear-gradient(180deg, rgba(3, 9, 58, 0.1026785714285714) 0%, rgba(0, 100, 136, 0.1026785714285714) 35%, rgba(94, 192, 168, 0.1) 100%);
+
+
+/// Variables de color
+$blackish: #000423;
+$white: #fbfaf4;
+$water-green: #5ec0a8;
+$mid-blue: #34536e;
+$dark-blue: #03093a;
+$lightest-violet: #969ccc;
+$light-violet: #58618B;
+$mid-violet: #58618b;
+$dark-violet: #383f7b;
+
+
+/// Variables de bordes
+$slim-border: 1px solid;
+$lightest-violet-border: $slim-border $lightest-violet;
+$light-violet-border: $slim-border $light-violet;
+$light-border: $slim-border $white;
+$dark-border: $slim-border $dark-violet;
+
+
+/// Variables de border-radius
+$small-radius: 8px;
+$mid-radius: 10px;
+$big-radius: 30px;

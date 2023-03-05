@@ -1,0 +1,41 @@
+/// Variables del footer
+footer {
+    background-color: $dark-blue;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: $white;
+    bottom: 0;
+}
+
+.listLinks {
+    text-decoration: none;
+    color: $lightest-violet;
+}
+
+.ftMain {
+    padding: 1.25rem 1.875rem 3rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ftMainItems {
+    padding: 1rem 0;
+    min-width: 12.5rem;
+    /* Equivalente a 200px para mobile first */
+}
+
+.ftMainImg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.owner {
+    color: $water-green;
+}
+
+.espacio {
+    padding: 0 0.3rem;
+}

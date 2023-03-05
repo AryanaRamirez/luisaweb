@@ -1,0 +1,72 @@
+/// Tipos de fuentes que voy a usar en el sitio web
+$sans-serif: "titillium-web", sans-serif;
+$decorative: "good-karma-regular", sans-serif;
+
+
+/// Variables de fuentes: weight
+$extra-light:200;
+$light: 300;
+$regular: 400;
+$semi-bold:600;
+$semi-bold-italic: $semi-bold italic;
+$bold: 700;
+
+
+/// Variantes del body
+.bg-body-mine {
+    font-family: $sans-serif;
+    font-weight: $light;
+    font-style: normal;
+    font-size: 1em;
+}
+
+
+/// Variantes del h1
+.titles {
+    color: $dark-violet;
+    text-align: center;
+}
+
+.vidtitle {
+    color: $dark-violet;
+}
+
+
+// Variantes de p
+.txtresaltado {
+    font-weight: $semi-bold;
+}
+
+.parrafo {
+    padding: 2rem 1rem 1rem 1rem;
+    color: $dark-violet;
+    text-align: center;
+    border: $dark-border;
+    border-radius: $big-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    line-height: 1.3;
+}
+
+.firma {
+    font-family: $decorative;
+    font-weight: $regular;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+.vidslinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.vids {
+    line-height: 2.6;
+    margin-top: 0.8rem;
+}
+
+
+/// variantes de 
+

@@ -1,0 +1,56 @@
+/// Variables del formulario
+.inputblock {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputlabel {
+    font-size: 1em;
+    color: $dark-violet;
+    font-weight: $extra-light;
+}
+
+.input {
+    border-radius: $small-radius;
+    border: $lightest-violet-border;
+    background-color: transparent;
+    height: 2.8em;
+    padding-left: 1em;
+    font-weight: $extra-light;
+    letter-spacing: 0.04em;
+}
+
+.inputTextarea {
+    background-color: transparent;
+    border-radius: $small-radius;
+    border: $lightest-violet-border;
+    padding-left: 1em;
+    font-weight: $extra-light;
+    letter-spacing: 0.04em;
+    height: 10rem;
+}
+
+.sendForm {
+    border-radius: $mid-radius;
+    border: $light-violet-border;
+    background-color: $dark-violet;
+    font-weight: $regular;
+    color: $white;
+    padding: 0.6rem 2rem;
+}
+
+.formButton {
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+}
+
+.map {
+    width: 100%;
+    height: 70%;
+    padding-top: 2rem;
+}
+
+.mapItems {
+    padding: 1rem 0.6rem;
+}

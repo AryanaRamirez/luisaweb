@@ -1,0 +1,22 @@
+@import "variables";
+@import "navbar";
+@import "footer";
+@import "mediaQueries";
+@import "textos";
+@import "accordion";
+@import "general";
+@import "forms";
+
+@import url("https://use.typekit.net/zjg0exe.css");
+
+html {
+    font-size: 100%;
+}
+
+/*16px*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
