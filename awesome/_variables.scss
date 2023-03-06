@@ -9,10 +9,17 @@ $white: #fbfaf4;
 $water-green: #5ec0a8;
 $mid-blue: #34536e;
 $dark-blue: #03093a;
-$lightest-violet: #969ccc;
+$lightest-violet: #DCDDE7;
 $light-violet: #58618B;
 $mid-violet: #58618b;
 $dark-violet: #383f7b;
+
+
+/// Variables de color de shadows de neomorphism
+$darkGray: #d3d3d3;
+$lightGray: #e1e1e1;
+$darkWhite: #ededed;
+$lightWhite: #fbfbfb;
 
 
 /// Variables de bordes
@@ -23,7 +30,58 @@ $light-border: $slim-border $white;
 $dark-border: $slim-border $dark-violet;
 
 
-/// Variables de border-radius
-$small-radius: 8px;
-$mid-radius: 10px;
-$big-radius: 30px;
+/// Variables de border-radius con mixin
+@mixin smallRadius($rad) {
+    border-radius: $rad;
+    border: $lightest-violet-border;
+    background-color: transparent;
+    font-weight: $extra-light;
+    letter-spacing: 0.04em;
+}
+
+@mixin midRadius($rad) {
+    border-radius: $rad;
+    border: $lightest-violet-border;
+    background-color: $lightest-violet;
+    font-weight: $regular;
+    color: $mid-violet;
+    padding: 0.6rem 1.2rem;
+}
+
+
+/// uso de la propiedad extend
+%cajaNeo {
+    width: 70%;
+    padding: 4rem 8rem 2rem 8rem;
+    color: $dark-violet;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    line-height: 1.3;
+}
+
+/// mixin de neomorphism con extend
+@mixin neoTexto($radius, $eje) {
+    @extend %cajaNeo;
+    border-radius: $radius;
+    background: transparent;
+    box-shadow: $eje $eje ($eje*2) $lightGray, (-$eje) (-$eje) ($eje*2) $lightWhite;
+}
+
+@mixin neoNavbar($ejex, $ejey , $blur) {
+    background: transparent;
+    box-shadow: $ejex $ejey ($ejey*2) $darkGray;
+}
+
+@mixin neoFooter($ejex, $ejey , $blur) {
+    background: transparent;
+    box-shadow: $ejex (-$ejey) ($ejey*2) $lightGray;
+}
+
+@mixin neoForm($radius, $eje) {
+    border-radius: $radius;
+    background: transparent;
+    box-shadow: $eje $eje ($eje*2) $lightGray, (-$eje) (-$eje) ($eje*2) $lightWhite;
+}

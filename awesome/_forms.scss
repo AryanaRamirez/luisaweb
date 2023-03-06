@@ -11,37 +11,26 @@
 }
 
 .input {
-    border-radius: $small-radius;
-    border: $lightest-violet-border;
-    background-color: transparent;
-    height: 2.8em;
+    @include smallRadius(8px);
+//    @include neoForm(8px , 6px);
+    height: 3em;
     padding-left: 1em;
-    font-weight: $extra-light;
-    letter-spacing: 0.04em;
 }
 
 .inputTextarea {
-    background-color: transparent;
-    border-radius: $small-radius;
-    border: $lightest-violet-border;
+    @include smallRadius(8px);
+//    @include neoForm(8px , 6px);
     padding-left: 1em;
-    font-weight: $extra-light;
-    letter-spacing: 0.04em;
     height: 10rem;
 }
 
 .sendForm {
-    border-radius: $mid-radius;
-    border: $light-violet-border;
-    background-color: $dark-violet;
-    font-weight: $regular;
-    color: $white;
-    padding: 0.6rem 2rem;
+    @include midRadius(10px);
 }
 
 .formButton {
     display: flex;
-    flex-direction:column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -52,5 +41,5 @@
 }
 
 .mapItems {
-    padding: 1rem 0.6rem;
+    padding: 4rem 0.6rem;
 }

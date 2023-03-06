@@ -1,3 +1,5 @@
+@import "textos";
+
 /// Navbar
 .logo {
     height: 6rem;
@@ -13,7 +15,7 @@
 }
 
 .navbar {
-    Background-color: $blackish;
+    @include neoNavbar(0px , 20px , 40px)
 }
 
 .nav-ul li a {
@@ -21,7 +23,8 @@
 }
 
 .navbar-nav .nav-link {
-    Font-family: "titanium web", sans-serif;
+    Font-family: $sans-serif;
+    font-weight: $regular;
     color: $water-green;
     text-align: right;
 }
@@ -32,9 +35,42 @@
 
 .navbar-nav .nav-link:hover {
     Color: $light-violet;
-    Background-color: $dark-blue;
+    font-weight: $semi-bold;
 }
 
 .navbar-toggler {
     background-color: $light-violet;
 }
+
+/*
+/// navbar con nesting y BEM
+/// Aun estoy trabajando en este codigo de nesting con BEM, por eso no lo borro
+.navbar {
+
+    &-brand,
+    &-brand:active,
+    &-brand:visited {
+        color: $water-green;
+
+        &-brand:hover {
+            font-weight: $bold;
+        }
+    }
+
+    &-toggler {
+        background-color: $light-violet;
+    }
+
+    &-nav,
+    &-link.active {
+        color: $light-violet;
+    }
+
+    &-link:hover {
+        color: $light-violet;
+        background-color: $dark-blue;
+    }
+
+    background-color: $blackish;
+}
+*/

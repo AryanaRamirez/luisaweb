@@ -6,6 +6,7 @@ footer {
     font-style: normal;
     color: $white;
     bottom: 0;
+    @include neoFooter(0px , 10px , 20px)
 }
 
 .listLinks {

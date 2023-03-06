@@ -61,25 +61,24 @@ small,
     font-weight: $extra-light;
 }
 
+
+/// nesting aplicado a etiqueta a
 a {
     text-decoration: none;
-}
 
-a:visited {
-    text-decoration: none;
-}
+    &:hover {
+        text-decoration: none;
+    }
 
-a:hover {
-    text-decoration: none;
-}
+    &:visited {
+        text-decoration: none;
+    }
 
-a:active {
-    text-decoration: none;
+    &:active {
+        text-decoration: none;
+    }
 }
 
 .canales {
-    padding: 1em;
-    border-radius: $mid-radius;
-    background-color: $dark-violet;
-    color: $white;
+    @include midRadius(10px);
 }

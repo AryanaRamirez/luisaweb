@@ -1,4 +1,59 @@
 @import url("https://use.typekit.net/zjg0exe.css");
+.parrafo {
+  width: 70%;
+  padding: 4rem 8rem 2rem 8rem;
+  color: #383f7b;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  line-height: 1.3;
+}
+
+.bg-body-mine {
+  font-family: "titillium-web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.titles {
+  color: #383f7b;
+  text-align: center;
+}
+
+.vidtitle {
+  color: #383f7b;
+}
+
+.txtresaltado {
+  font-weight: 600;
+}
+
+.parrafo {
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
+}
+
+.firma {
+  font-family: "good-karma-regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
+}
+
+.vidslinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.vids {
+  line-height: 2.6;
+  margin-top: 0.8rem;
+}
+
 .logo {
   height: 6rem;
   width: auto;
@@ -13,7 +68,8 @@
 }
 
 .navbar {
-  Background-color: #000423;
+  background: transparent;
+  box-shadow: 0px 20px 40px #d3d3d3;
 }
 
 .nav-ul li a {
@@ -21,7 +77,8 @@
 }
 
 .navbar-nav .nav-link {
-  Font-family: "titanium web", sans-serif;
+  Font-family: "titillium-web", sans-serif;
+  font-weight: 400;
   color: #5ec0a8;
   text-align: right;
 }
@@ -32,13 +89,45 @@
 
 .navbar-nav .nav-link:hover {
   Color: #58618B;
-  Background-color: #03093a;
+  font-weight: 600;
 }
 
 .navbar-toggler {
   background-color: #58618B;
 }
 
+/*
+/// navbar con nesting y BEM
+/// Aun estoy trabajando en este codigo de nesting con BEM, por eso no lo borro
+.navbar {
+
+    &-brand,
+    &-brand:active,
+    &-brand:visited {
+        color: $water-green;
+
+        &-brand:hover {
+            font-weight: $bold;
+        }
+    }
+
+    &-toggler {
+        background-color: $light-violet;
+    }
+
+    &-nav,
+    &-link.active {
+        color: $light-violet;
+    }
+
+    &-link:hover {
+        color: $light-violet;
+        background-color: $dark-blue;
+    }
+
+    background-color: $blackish;
+}
+*/
 footer {
   background-color: #03093a;
   font-family: "museo-sans", sans-serif;
@@ -46,11 +135,13 @@ footer {
   font-style: normal;
   color: #fbfaf4;
   bottom: 0;
+  background: transparent;
+  box-shadow: 0px -10px 20px #e1e1e1;
 }
 
 .listLinks {
   text-decoration: none;
-  color: #969ccc;
+  color: #DCDDE7;
 }
 
 .ftMain {
@@ -82,7 +173,7 @@ footer {
 
 /* Defino las media queries | Breakpoints */
 /* 36rem equivalen al sm de Bootstrap 576px */
-@media screen and (min-width: 0rem) and (max-width: 36rem) {
+@media screen and (max-width: 36rem) {
   .ftMain {
     justify-content: space-around;
   }
@@ -126,7 +217,6 @@ footer {
     padding-bottom: 4rem;
   }
   .contenido {
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -168,7 +258,6 @@ footer {
     padding-bottom: 4rem;
   }
   .contenido {
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -186,23 +275,31 @@ footer {
   }
   .gridDesignBio {
     display: grid;
-    grid-template-columns: 40% 50% 10%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     padding: 4rem 0;
   }
   .biografia {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    word-wrap: normal;
+  }
+  .container-img {
+    width: 90%;
+  }
+  .size {
+    width: 100%;
+    height: auto;
   }
   .gridDesignForm {
     display: grid;
-    grid-template-columns: 16% 44% 40%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     padding: 2rem 0;
   }
   .contenido {
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     padding-right: 2.4rem;
@@ -229,16 +326,9 @@ footer {
 }
 
 .parrafo {
-  padding: 2rem 1rem 1rem 1rem;
-  color: #383f7b;
-  text-align: center;
-  border: 1px solid #383f7b;
   border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: auto;
-  line-height: 1.3;
+  background: transparent;
+  box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
 }
 
 .firma {
@@ -259,7 +349,7 @@ footer {
 }
 
 .contIntro {
-  background-color: #969ccc;
+  background-color: #DCDDE7;
   color: #383f7b;
   padding: 1.4rem;
   display: grid;
@@ -290,7 +380,7 @@ footer {
 }
 
 .accordion-button:focus {
-  background-color: #969ccc;
+  background-color: #DCDDE7;
   color: #58618b;
 }
 
@@ -371,24 +461,23 @@ small,
 a {
   text-decoration: none;
 }
-
-a:visited {
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: none;
 }
-
+a:visited {
+  text-decoration: none;
+}
 a:active {
   text-decoration: none;
 }
 
 .canales {
-  padding: 1em;
   border-radius: 10px;
-  background-color: #383f7b;
-  color: #fbfaf4;
+  border: 1px solid #DCDDE7;
+  background-color: #DCDDE7;
+  font-weight: 400;
+  color: #58618b;
+  padding: 0.6rem 1.2rem;
 }
 
 .inputblock {
@@ -404,31 +493,31 @@ a:active {
 
 .input {
   border-radius: 8px;
-  border: 1px solid #969ccc;
+  border: 1px solid #DCDDE7;
   background-color: transparent;
-  height: 2.8em;
-  padding-left: 1em;
   font-weight: 200;
   letter-spacing: 0.04em;
+  height: 3em;
+  padding-left: 1em;
 }
 
 .inputTextarea {
-  background-color: transparent;
   border-radius: 8px;
-  border: 1px solid #969ccc;
-  padding-left: 1em;
+  border: 1px solid #DCDDE7;
+  background-color: transparent;
   font-weight: 200;
   letter-spacing: 0.04em;
+  padding-left: 1em;
   height: 10rem;
 }
 
 .sendForm {
   border-radius: 10px;
-  border: 1px solid #58618B;
-  background-color: #383f7b;
+  border: 1px solid #DCDDE7;
+  background-color: #DCDDE7;
   font-weight: 400;
-  color: #fbfaf4;
-  padding: 0.6rem 2rem;
+  color: #58618b;
+  padding: 0.6rem 1.2rem;
 }
 
 .formButton {
@@ -444,7 +533,7 @@ a:active {
 }
 
 .mapItems {
-  padding: 1rem 0.6rem;
+  padding: 4rem 0.6rem;
 }
 
 html {
