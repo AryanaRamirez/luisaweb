@@ -12,14 +12,12 @@
 
 .input {
     @include smallRadius(8px);
-//    @include neoForm(8px , 6px);
     height: 3em;
     padding-left: 1em;
 }
 
 .inputTextarea {
     @include smallRadius(8px);
-//    @include neoForm(8px , 6px);
     padding-left: 1em;
     height: 10rem;
 }
@@ -37,7 +35,7 @@
 .map {
     width: 100%;
     height: 70%;
-    padding-top: 2rem;
+   // padding-top: 2rem;
 }
 
 .mapItems {

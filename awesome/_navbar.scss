@@ -11,7 +11,7 @@
 .navbar-brand:active,
 .navbar-brand:visited,
 .navbar-brand:hover {
-    color: $water-green
+    color: $water-green;
 }
 
 .navbar {
@@ -24,9 +24,10 @@
 
 .navbar-nav .nav-link {
     Font-family: $sans-serif;
-    font-weight: $regular;
+    font-weight: $semi-bold;
     color: $water-green;
     text-align: right;
+    font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link.active {
@@ -39,7 +40,7 @@
 }
 
 .navbar-toggler {
-    background-color: $light-violet;
+    background-color: $lightest-violet;
 }
 
 /*

@@ -1,0 +1,54 @@
+/// Personalizadas para mi sitio
+/// Para las fotos
+.animation {
+    animation: foto 5s;
+    @include imgRadius(30px , 10px);
+}
+
+@keyframes foto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/// Para el mapa
+.animationMap {
+    animation: mapa 5s;
+    @include mapRadius(30px , 10px);
+}
+
+@keyframes mapa {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/// Para los botones
+.button:hover {
+    animation: button 2s;
+
+}
+
+@keyframes button {
+    0% {
+        background-color: $lightest-violet;
+    }
+
+    50% {
+        background-color: $dark-violet;
+        color: $lightest-violet;
+    }
+
+    100% {
+        background-color: $lightest-violet;
+    }
+}

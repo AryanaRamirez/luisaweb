@@ -40,12 +40,19 @@ $bold: 700;
 .parrafo {
     @include neoTexto(30px , 10px);
 }
+/*
+.grandeTxt {
+    font-size: 1.563rem;
+    font-weight: 300;
+    letter-spacing: 0.04;
+    line-height: 1.6;
+}*/
 
 .firma {
     font-family: $decorative;
     font-weight: $regular;
     font-style: normal;
-    font-size: 1.4em;
+    font-size: 1.953rem;
 }
 
 .vidslinks {

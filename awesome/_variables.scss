@@ -13,6 +13,7 @@ $lightest-violet: #DCDDE7;
 $light-violet: #58618B;
 $mid-violet: #58618b;
 $dark-violet: #383f7b;
+$darkest-violet: #1E2350;
 
 
 /// Variables de color de shadows de neomorphism
@@ -44,14 +45,26 @@ $dark-border: $slim-border $dark-violet;
     border: $lightest-violet-border;
     background-color: $lightest-violet;
     font-weight: $regular;
+    font-size: 1.1rem;
     color: $mid-violet;
     padding: 0.6rem 1.2rem;
+}
+
+@mixin imgRadius($radius , $eje) {
+    border-radius: $radius;
+    background: transparent;
+    box-shadow: (-$eje) $eje ($eje*2) $darkGray, $eje (-$eje) ($eje*2) $darkWhite;
+}
+
+@mixin mapRadius($radius , $eje) {
+    border-radius: $radius;
+    background: transparent;
+    box-shadow: $eje (-$eje) ($eje*2) $lightGray, (-$eje) $eje ($eje*2) $darkWhite;
 }
 
 
 /// uso de la propiedad extend
 %cajaNeo {
-    width: 70%;
     padding: 4rem 8rem 2rem 8rem;
     color: $dark-violet;
     text-align: center;
