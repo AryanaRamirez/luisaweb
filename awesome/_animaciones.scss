@@ -19,6 +19,8 @@
 .animationMap {
     animation: mapa 5s;
     @include mapRadius(30px , 10px);
+    margin-top: 14rem;
+    height: auto;
 }
 
 @keyframes mapa {

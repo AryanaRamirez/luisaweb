@@ -42,36 +42,3 @@
 .navbar-toggler {
     background-color: $lightest-violet;
 }
-
-/*
-/// navbar con nesting y BEM
-/// Aun estoy trabajando en este codigo de nesting con BEM, por eso no lo borro
-.navbar {
-
-    &-brand,
-    &-brand:active,
-    &-brand:visited {
-        color: $water-green;
-
-        &-brand:hover {
-            font-weight: $bold;
-        }
-    }
-
-    &-toggler {
-        background-color: $light-violet;
-    }
-
-    &-nav,
-    &-link.active {
-        color: $light-violet;
-    }
-
-    &-link:hover {
-        color: $light-violet;
-        background-color: $dark-blue;
-    }
-
-    background-color: $blackish;
-}
-*/

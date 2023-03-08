@@ -19,7 +19,6 @@ section {
 
 p {
     font-size: 1.125rem;
-    margin-bottom: 1rem;
 }
 
 h1,
@@ -29,6 +28,7 @@ h4,
 h5 {
     font-family: $sans-serif;
     font-weight: $light;
+    margin: 3rem 0 1.38rem;
     line-height: 1.3;
 }
 
@@ -45,20 +45,24 @@ h2 {
 
 h3 {
     font-size: 1.728rem;
+    color: $dark-violet;
 }
 
 h4 {
     font-size: 1.44rem;
+    color: $dark-violet;
 }
 
 h5 {
     font-size: 1.2rem;
+    color: $dark-violet;
 }
 
 small,
 .text_small {
     font-size: 0.833rem;
     font-weight: $extra-light;
+    color: $darkest-violet;
 }
 
 
@@ -81,4 +85,8 @@ a {
 
 .canales {
     @include midRadius(10px);
+}
+
+form {
+    padding-top: 2rem;
 }

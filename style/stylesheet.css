@@ -17,17 +17,27 @@
   font-size: 1em;
 }
 
-.titles {
+.titleLeft {
+  text-align: left;
   color: #383f7b;
-  text-align: center;
+  padding-bottom: 1.4rem;
 }
 
-.vidtitle {
+.titleCenter {
+  text-align: center;
   color: #383f7b;
+  padding-bottom: 1.4rem;
+}
+
+.titleRight {
+  text-align: right;
+  color: #383f7b;
+  padding-bottom: 1.4rem;
 }
 
 .txtresaltado {
   font-weight: 600;
+  color: #383f7b;
 }
 
 .parrafo {
@@ -36,13 +46,6 @@
   box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
 }
 
-/*
-.grandeTxt {
-    font-size: 1.563rem;
-    font-weight: 300;
-    letter-spacing: 0.04;
-    line-height: 1.6;
-}*/
 .firma {
   font-family: "good-karma-regular", sans-serif;
   font-weight: 400;
@@ -103,40 +106,7 @@
   background-color: #DCDDE7;
 }
 
-/*
-/// navbar con nesting y BEM
-/// Aun estoy trabajando en este codigo de nesting con BEM, por eso no lo borro
-.navbar {
-
-    &-brand,
-    &-brand:active,
-    &-brand:visited {
-        color: $water-green;
-
-        &-brand:hover {
-            font-weight: $bold;
-        }
-    }
-
-    &-toggler {
-        background-color: $light-violet;
-    }
-
-    &-nav,
-    &-link.active {
-        color: $light-violet;
-    }
-
-    &-link:hover {
-        color: $light-violet;
-        background-color: $dark-blue;
-    }
-
-    background-color: $blackish;
-}
-*/
 footer {
-  background-color: #03093a;
   font-family: "museo-sans", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -345,8 +315,8 @@ footer {
     justify-content: center;
   }
   .size {
-    width: auto;
-    height: 90%;
+    width: 90%;
+    height: auto;
   }
   .parrafo {
     padding: 5rem 6rem 3rem 6rem;
@@ -368,6 +338,16 @@ footer {
     flex-direction: column;
     padding-right: 2.4rem;
   }
+  .pDeco {
+    font-family: "good-karma-regular", sans-serif;
+    font-size: 2rem;
+    color: #383f7b;
+  }
+  .h2Deco {
+    font-family: "good-karma-regular", sans-serif;
+    font-size: 2.6rem;
+    color: #383f7b;
+  }
 }
 .bg-body-mine {
   font-family: "titillium-web", sans-serif;
@@ -376,17 +356,27 @@ footer {
   font-size: 1em;
 }
 
-.titles {
+.titleLeft {
+  text-align: left;
   color: #383f7b;
-  text-align: center;
+  padding-bottom: 1.4rem;
 }
 
-.vidtitle {
+.titleCenter {
+  text-align: center;
   color: #383f7b;
+  padding-bottom: 1.4rem;
+}
+
+.titleRight {
+  text-align: right;
+  color: #383f7b;
+  padding-bottom: 1.4rem;
 }
 
 .txtresaltado {
   font-weight: 600;
+  color: #383f7b;
 }
 
 .parrafo {
@@ -395,13 +385,6 @@ footer {
   box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
 }
 
-/*
-.grandeTxt {
-    font-size: 1.563rem;
-    font-weight: 300;
-    letter-spacing: 0.04;
-    line-height: 1.6;
-}*/
 .firma {
   font-family: "good-karma-regular", sans-serif;
   font-weight: 400;
@@ -487,7 +470,6 @@ section {
 
 p {
   font-size: 1.125rem;
-  margin-bottom: 1rem;
 }
 
 h1,
@@ -497,6 +479,7 @@ h4,
 h5 {
   font-family: "titillium-web", sans-serif;
   font-weight: 300;
+  margin: 3rem 0 1.38rem;
   line-height: 1.3;
 }
 
@@ -513,20 +496,24 @@ h2 {
 
 h3 {
   font-size: 1.728rem;
+  color: #383f7b;
 }
 
 h4 {
   font-size: 1.44rem;
+  color: #383f7b;
 }
 
 h5 {
   font-size: 1.2rem;
+  color: #383f7b;
 }
 
 small,
 .text_small {
   font-size: 0.833rem;
   font-weight: 200;
+  color: #1E2350;
 }
 
 a {
@@ -550,6 +537,10 @@ a:active {
   font-size: 1.1rem;
   color: #58618b;
   padding: 0.6rem 1.2rem;
+}
+
+form {
+  padding-top: 2rem;
 }
 
 .inputblock {
@@ -605,7 +596,7 @@ a:active {
 }
 
 .mapItems {
-  padding: 4rem 0.6rem;
+  padding-left: 1.1rem;
 }
 
 .animation {
@@ -628,6 +619,8 @@ a:active {
   border-radius: 30px;
   background: transparent;
   box-shadow: 10px -10px 20px #e1e1e1, -10px 10px 20px #ededed;
+  margin-top: 14rem;
+  height: auto;
 }
 
 @keyframes mapa {
@@ -654,6 +647,82 @@ a:active {
     background-color: #DCDDE7;
   }
 }
+.productos {
+  border-radius: 30px;
+  background: transparent;
+  width: 20rem;
+}
+
+.prods {
+  border-radius: 30px;
+  border: 1px solid #fbfaf4;
+  background: transparent;
+  box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+  padding: 7rem 9rem;
+}
+
+.imgCont {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1.2rem;
+}
+
+.imgLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.padRight {
+  padding-right: 2rem;
+}
+
+.txtLeft {
+  text-align: left;
+}
+
+.imgRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.padLeft {
+  padding-left: 2rem;
+}
+
+.txtRight {
+  text-align: right;
+}
+
+.venta {
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #DCDDE7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  box-shadow: 0 5px 10px #d3d3d3;
+  padding: 4rem 9rem 7rem 9rem;
+}
+
+.underline {
+  text-decoration-line: underline;
+  text-decoration-color: #F1EEA6;
+  text-underline-offset: -0.7rem;
+  text-decoration-thickness: 1.2rem;
+  text-decoration-skip-ink: none;
+}
+
+.compraLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem 15rem 0 15rem;
+}
+
 html {
   font-size: 100%;
 }

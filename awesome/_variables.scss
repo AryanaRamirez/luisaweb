@@ -4,7 +4,6 @@ $background-gradient: linear-gradient(180deg, rgba(3, 9, 58, 0.1026785714285714)
 
 
 /// Variables de color
-$blackish: #000423;
 $white: #fbfaf4;
 $water-green: #5ec0a8;
 $mid-blue: #34536e;
@@ -14,6 +13,7 @@ $light-violet: #58618B;
 $mid-violet: #58618b;
 $dark-violet: #383f7b;
 $darkest-violet: #1E2350;
+$underline: #F1EEA6;
 
 
 /// Variables de color de shadows de neomorphism
@@ -50,16 +50,41 @@ $dark-border: $slim-border $dark-violet;
     padding: 0.6rem 1.2rem;
 }
 
-@mixin imgRadius($radius , $eje) {
+@mixin imgRadius($radius, $eje) {
     border-radius: $radius;
     background: transparent;
     box-shadow: (-$eje) $eje ($eje*2) $darkGray, $eje (-$eje) ($eje*2) $darkWhite;
 }
 
-@mixin mapRadius($radius , $eje) {
+@mixin mapRadius($radius, $eje) {
     border-radius: $radius;
     background: transparent;
     box-shadow: $eje (-$eje) ($eje*2) $lightGray, (-$eje) $eje ($eje*2) $darkWhite;
+}
+
+
+/// mixin para las imagenes de los productos
+@mixin prodimgs($rad, $ejex, $ejey, $blur) {
+    border-radius: $rad;
+    border: $light-border;
+    background: transparent;
+    box-shadow: $ejex (-$ejey) $blur $lightWhite, $ejex $ejey $blur $darkGray;
+}
+
+/// Para productos
+@mixin prods($rad) {
+    border-radius: $rad;
+    background: transparent;
+}
+
+@mixin prodsVenta($rad) {
+    border-radius: $rad;
+    background: transparent;
+    border: $lightest-violet-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -75,6 +100,7 @@ $dark-border: $slim-border $dark-violet;
     line-height: 1.3;
 }
 
+
 /// mixin de neomorphism con extend
 @mixin neoTexto($radius, $eje) {
     @extend %cajaNeo;
@@ -83,12 +109,12 @@ $dark-border: $slim-border $dark-violet;
     box-shadow: $eje $eje ($eje*2) $lightGray, (-$eje) (-$eje) ($eje*2) $lightWhite;
 }
 
-@mixin neoNavbar($ejex, $ejey , $blur) {
+@mixin neoNavbar($ejex, $ejey, $blur) {
     background: transparent;
     box-shadow: $ejex $ejey ($ejey*2) $darkGray;
 }
 
-@mixin neoFooter($ejex, $ejey , $blur) {
+@mixin neoFooter($ejex, $ejey, $blur) {
     background: transparent;
     box-shadow: $ejex (-$ejey) ($ejey*2) $lightGray;
 }
@@ -97,4 +123,11 @@ $dark-border: $slim-border $dark-violet;
     border-radius: $radius;
     background: transparent;
     box-shadow: $eje $eje ($eje*2) $lightGray, (-$eje) (-$eje) ($eje*2) $lightWhite;
+}
+
+
+/// mixin para titulos
+@mixin titulos {
+    color: $dark-violet;
+    padding-bottom: 1.4rem;
 }

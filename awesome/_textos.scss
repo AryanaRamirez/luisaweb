@@ -22,31 +22,32 @@ $bold: 700;
 
 
 /// Variantes del h1
-.titles {
-    color: $dark-violet;
-    text-align: center;
+.titleLeft {
+    text-align: left;
+    @include titulos;
 }
 
-.vidtitle {
-    color: $dark-violet;
+.titleCenter {
+    text-align: center;
+    @include titulos;
 }
+
+.titleRight {
+    text-align: right;
+    @include titulos;
+}
+
 
 
 // Variantes de p
 .txtresaltado {
     font-weight: $semi-bold;
+    color: $dark-violet;
 }
 
 .parrafo {
     @include neoTexto(30px , 10px);
 }
-/*
-.grandeTxt {
-    font-size: 1.563rem;
-    font-weight: 300;
-    letter-spacing: 0.04;
-    line-height: 1.6;
-}*/
 
 .firma {
     font-family: $decorative;
@@ -64,7 +65,3 @@ $bold: 700;
     line-height: 2.6;
     margin-top: 0.8rem;
 }
-
-
-/// variantes
-
