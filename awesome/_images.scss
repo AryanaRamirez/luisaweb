@@ -4,9 +4,28 @@
     width: 20rem;
 }
 
+.services {
+    @include prods(30px);
+    width: 100%
+}
+
+.carrImgs {
+    @include prods(60px);
+}
+
 .prods {
-    @include prodimgs(30px , 0 , 10px , 10px);
+    @include prodimgs(30px, 0, 10px, 10px);
     padding: 7rem 9rem;
+}
+
+.servicios {
+    @include prodimgs(30px, 0, 10px, 10px);
+    padding: 3rem;
+}
+
+.carrPadding {
+    @include prodimgs(30px, 0, 10px, 10px);
+    padding: 5rem;
 }
 
 .imgCont {
@@ -45,7 +64,7 @@
 
 .venta {
     @include prodsVenta(30px);
-    @include neoNavbar(0 , 5px , 10px);
+    @include neoNavbar(0, 5px, 10px);
     padding: 4rem 9rem 7rem 9rem;
 }
 
@@ -57,9 +76,27 @@
     text-decoration-skip-ink: none;
 }
 
+.underlineSmall {
+    text-decoration-line: underline;
+    text-decoration-color: $underline;
+    text-underline-offset: -0.2rem;
+    text-decoration-thickness: 0.5rem;
+    text-decoration-skip-ink: none;
+}
+
 .compraLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2rem 15rem 0 15rem;
+}
+
+.servCards {
+    padding-bottom: 3rem;
+}
+
+.carousel-inner .item img {
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
 }

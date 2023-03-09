@@ -5,6 +5,11 @@
     @include imgRadius(30px , 10px);
 }
 
+.animationIndex {
+    animation: foto 5s;
+    @include imgRight(30px , 0 , 10px , 20px);
+}
+
 @keyframes foto {
     0% {
         opacity: 0;
@@ -40,6 +45,10 @@
 
 }
 
+.indexButton:hover {
+    animation: indexButton 3s;
+}
+
 @keyframes button {
     0% {
         background-color: $lightest-violet;
@@ -52,5 +61,20 @@
 
     100% {
         background-color: $lightest-violet;
+    }
+}
+
+@keyframes indexButton {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: $lightest-violet;
+      //  color: $dark-violet;
+    }
+
+    100% {
+        background-color: transparent;
     }
 }

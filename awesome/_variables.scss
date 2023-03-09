@@ -62,6 +62,12 @@ $dark-border: $slim-border $dark-violet;
     box-shadow: $eje (-$eje) ($eje*2) $lightGray, (-$eje) $eje ($eje*2) $darkWhite;
 }
 
+@mixin imgRight($radius, $ejex, $ejey, $blur) {
+    border-radius: $radius;
+    background: transparent;
+    box-shadow: $ejex $ejey $blur $darkGray, $ejex (-$ejey) $blur $darkWhite;
+}
+
 
 /// mixin para las imagenes de los productos
 @mixin prodimgs($rad, $ejex, $ejey, $blur) {

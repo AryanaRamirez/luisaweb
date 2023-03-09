@@ -179,8 +179,8 @@
         display: grid;
         grid-template-columns: (2, 1fr);
         grid-template-rows: (1, 1fr);
-        grid-template-areas: 
-        "foto texto";
+        grid-template-areas:
+            "foto texto";
     }
 
     .biografia {
@@ -208,7 +208,7 @@
     .parrafo {
         padding: 5rem 6rem 3rem 6rem;
     }
-    
+
     .grandeTxt {
         font-size: 1.563rem;
         font-weight: 300;
@@ -240,4 +240,21 @@
         font-size: 2.6rem;
         color: $dark-violet;
     }
+
+    /* variables del index */
+    .linkBox {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        @include prodsVenta(30px);
+        @include neoNavbar(0, 2px, 6px);
+    }
+
+    .linkGroup {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
 }

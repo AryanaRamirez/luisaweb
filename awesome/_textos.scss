@@ -21,7 +21,7 @@ $bold: 700;
 }
 
 
-/// Variantes del h1
+/// Variantes del h1 | títulos en general
 .titleLeft {
     text-align: left;
     @include titulos;
@@ -64,4 +64,10 @@ $bold: 700;
 .vids {
     line-height: 2.6;
     margin-top: 0.8rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
