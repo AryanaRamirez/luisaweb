@@ -17,20 +17,8 @@
   font-size: 1em;
 }
 
-.titleLeft {
-  text-align: left;
-  color: #383f7b;
-  padding-bottom: 1.4rem;
-}
-
 .titleCenter {
   text-align: center;
-  color: #383f7b;
-  padding-bottom: 1.4rem;
-}
-
-.titleRight {
-  text-align: right;
   color: #383f7b;
   padding-bottom: 1.4rem;
 }
@@ -195,7 +183,6 @@ footer {
   }
   .parrafo {
     padding: 3rem 2rem 1rem 2rem;
-    width: 90%;
   }
   .grandeTxt {
     font-size: 1.1rem;
@@ -223,6 +210,74 @@ footer {
   footer {
     margin-top: 6rem;
   }
+  .carrPadding {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 0;
+  }
+  .carrImgs {
+    border-radius: 30px;
+    background: transparent;
+  }
+  .title {
+    text-align: center;
+    color: #383f7b;
+    padding-bottom: 1.4rem;
+  }
+  .prods {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 2rem 1rem;
+  }
+  .imgCont {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .imgLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .padRight {
+    padding-right: 0;
+  }
+  .txtLeft {
+    text-align: center;
+  }
+  .imgRight {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .padLeft {
+    padding-left: 2rem;
+  }
+  .txtRight {
+    text-align: center;
+  }
+  .venta {
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 5px 10px #d3d3d3;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .compraLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
 }
 /* 62rem equivalen al lg de Bootstrap 992px */
 @media screen and (min-width: 37rem) and (max-width: 62rem) {
@@ -234,13 +289,13 @@ footer {
     margin: 4rem auto;
   }
   .pageintro {
-    text-align: right;
+    text-align: center;
     padding-right: 0.4rem;
   }
   .gridDesignBio {
     display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: 2, 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
   }
   .biografia {
@@ -277,6 +332,74 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .carrPadding {
+    border-radius: 20px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 3rem;
+  }
+  .carrImgs {
+    border-radius: 30px;
+    background: transparent;
+  }
+  .title {
+    text-align: center;
+    color: #383f7b;
+    padding-bottom: 1.4rem;
+  }
+  .prods {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 2rem 4rem;
+  }
+  .imgCont {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .imgLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .padRight {
+    padding-right: 0;
+  }
+  .txtLeft {
+    text-align: center;
+  }
+  .imgRight {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .padLeft {
+    padding-left: 2rem;
+  }
+  .txtRight {
+    text-align: center;
+  }
+  .venta {
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 5px 10px #d3d3d3;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .compraLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
 }
 /* Para resoluciones mayores a 992px */
 @media screen and (min-width: 62.063rem) {
@@ -301,12 +424,12 @@ footer {
   }
   .gridDesignBio {
     display: grid;
-    grid-template-columns: 2, 1fr;
-    grid-template-rows: 1, 1fr;
-    grid-template-areas: "foto texto";
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1em;
+    grid-template-rows: auto;
   }
   .biografia {
-    width: auto;
+    width: 1.5fr;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -321,7 +444,7 @@ footer {
     justify-content: center;
   }
   .size {
-    width: 90%;
+    width: 1fr;
     height: auto;
   }
   .parrafo {
@@ -335,7 +458,7 @@ footer {
   }
   .gridDesignForm {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto;
     padding: 2rem 0;
   }
@@ -375,6 +498,81 @@ footer {
     padding-bottom: 1rem;
     text-align: center;
   }
+  .indexBio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    word-wrap: normal;
+  }
+  .carrPadding {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 5rem;
+  }
+  .carrImgs {
+    border-radius: 40px;
+    background: transparent;
+  }
+  .title {
+    text-align: right;
+    color: #383f7b;
+    padding-bottom: 1.4rem;
+  }
+  .prods {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 7rem 9rem;
+  }
+  .imgCont {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1.2rem;
+  }
+  .imgLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+  }
+  .padRight {
+    padding-right: 2rem;
+  }
+  .txtLeft {
+    text-align: left;
+  }
+  .imgRight {
+    display: flex;
+    flex-direction: row;
+  }
+  .padLeft {
+    padding-left: 2rem;
+  }
+  .txtRight {
+    text-align: right;
+  }
+  .venta {
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 5px 10px #d3d3d3;
+    padding: 4rem 9rem 7rem 9rem;
+  }
+  .compraLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 15rem 0 15rem;
+  }
 }
 .bg-body-mine {
   font-family: "titillium-web", sans-serif;
@@ -383,20 +581,8 @@ footer {
   font-size: 1em;
 }
 
-.titleLeft {
-  text-align: left;
-  color: #383f7b;
-  padding-bottom: 1.4rem;
-}
-
 .titleCenter {
   text-align: center;
-  color: #383f7b;
-  padding-bottom: 1.4rem;
-}
-
-.titleRight {
-  text-align: right;
   color: #383f7b;
   padding-bottom: 1.4rem;
 }
@@ -740,19 +926,11 @@ form {
   width: 100%;
 }
 
-.carrImgs {
-  border-radius: 60px;
-  background: transparent;
-}
-
+/*
 .prods {
-  border-radius: 30px;
-  border: 1px solid #fbfaf4;
-  background: transparent;
-  box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-  padding: 7rem 9rem;
-}
-
+    @include prodimgs(30px, 0, 10px, 10px);
+    padding: 7rem 9rem;
+}*/
 .servicios {
   border-radius: 30px;
   border: 1px solid #fbfaf4;
@@ -761,61 +939,12 @@ form {
   padding: 3rem;
 }
 
-.carrPadding {
-  border-radius: 30px;
-  border: 1px solid #fbfaf4;
-  background: transparent;
-  box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-  padding: 5rem;
-}
-
-.imgCont {
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 1.2rem;
-}
-
-.imgLeft {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-}
-
-.padRight {
-  padding-right: 2rem;
-}
-
-.txtLeft {
-  text-align: left;
-}
-
-.imgRight {
-  display: flex;
-  flex-direction: row;
-}
-
-.padLeft {
-  padding-left: 2rem;
-}
-
-.txtRight {
-  text-align: right;
-}
-
+/*
 .venta {
-  border-radius: 30px;
-  background: transparent;
-  border: 1px solid #DCDDE7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: transparent;
-  box-shadow: 0 5px 10px #d3d3d3;
-  padding: 4rem 9rem 7rem 9rem;
-}
-
+    @include prodsVenta(30px);
+    @include neoNavbar(0, 5px, 10px);
+    padding: 4rem 9rem 7rem 9rem;
+}*/
 .underline {
   text-decoration-line: underline;
   text-decoration-color: #F1EEA6;
@@ -832,13 +961,13 @@ form {
   text-decoration-skip-ink: none;
 }
 
+/*
 .compraLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2rem 15rem 0 15rem;
-}
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 15rem 0 15rem;
+}*/
 .servCards {
   padding-bottom: 3rem;
 }

@@ -46,7 +46,6 @@
 
     .parrafo {
         padding: 3rem 2rem 1rem 2rem;
-        width: 90%;
     }
 
     .grandeTxt {
@@ -80,6 +79,73 @@
     footer {
         margin-top: 6rem;
     }
+
+    .carrPadding {
+        @include prodimgs(30px, 0, 10px, 10px);
+        padding: 0;
+    }
+
+    .carrImgs {
+        @include prods(30px);
+    }
+
+    .title {
+        text-align: center;
+        @include titulos;
+    }
+
+    // Productos
+    .prods {
+        @include prodimgs(30px, 0, 10px, 10px);
+        padding: 2rem 1rem;
+    }
+
+    .imgCont {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .imgLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .padRight {
+        padding-right: 0;
+    }
+
+    .txtLeft {
+        text-align: center;
+    }
+
+    .imgRight {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .padLeft {
+        padding-left: 2rem;
+    }
+
+    .txtRight {
+        text-align: center;
+    }
+
+    .venta {
+        @include prodsVenta(30px);
+        @include neoNavbar(0, 5px, 10px);
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .compraLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
 }
 
 
@@ -95,14 +161,14 @@
     }
 
     .pageintro {
-        text-align: right;
+        text-align: center;
         padding-right: 0.4rem;
     }
 
     .gridDesignBio {
         display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-content: center;
     }
 
@@ -146,6 +212,73 @@
         display: flex;
         flex-direction: column;
     }
+
+    .carrPadding {
+        @include prodimgs(20px, 0, 10px, 10px);
+        padding: 3rem;
+    }
+
+    .carrImgs {
+        @include prods(30px);
+    }
+
+    .title {
+        text-align: center;
+        @include titulos;
+    }
+
+    // Productos
+    .prods {
+        @include prodimgs(30px, 0, 10px, 10px);
+        padding: 2rem 4rem;
+    }
+
+    .imgCont {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .imgLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .padRight {
+        padding-right: 0;
+    }
+
+    .txtLeft {
+        text-align: center;
+    }
+
+    .imgRight {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .padLeft {
+        padding-left: 2rem;
+    }
+
+    .txtRight {
+        text-align: center;
+    }
+
+    .venta {
+        @include prodsVenta(30px);
+        @include neoNavbar(0, 5px, 10px);
+        padding: 2rem 2rem 1rem 2rem;
+    }
+
+    .compraLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
 }
 
 
@@ -177,14 +310,13 @@
 
     .gridDesignBio {
         display: grid;
-        grid-template-columns: (2, 1fr);
-        grid-template-rows: (1, 1fr);
-        grid-template-areas:
-            "foto texto";
+        grid-template-columns: 1fr 1.5fr;
+        gap: 1em;
+        grid-template-rows: auto;
     }
 
     .biografia {
-        width: auto;
+        width: 1.5fr;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -201,7 +333,7 @@
     }
 
     .size {
-        width: 90%;
+        width: 1fr;
         height: auto;
     }
 
@@ -218,7 +350,7 @@
 
     .gridDesignForm {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 1.5fr 1fr;
         grid-template-rows: auto;
         padding: 2rem 0;
     }
@@ -257,4 +389,78 @@
         text-align: center;
     }
 
+    .indexBio {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        word-wrap: normal;
+    }
+
+    .carrPadding {
+        @include prodimgs(30px, 0, 10px, 10px);
+        padding: 5rem;
+    }
+
+    .carrImgs {
+        @include prods(40px);
+    }
+
+    .title {
+        text-align: right;
+        @include titulos;
+    }
+
+    // Productos
+    .prods {
+        @include prodimgs(30px, 0, 10px, 10px);
+        padding: 7rem 9rem;
+    }
+
+    .imgCont {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 1.2rem;
+    }
+
+    .imgLeft {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 4rem;
+    }
+
+    .padRight {
+        padding-right: 2rem;
+    }
+
+    .txtLeft {
+        text-align: left;
+    }
+
+    .imgRight {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .padLeft {
+        padding-left: 2rem;
+    }
+
+    .txtRight {
+        text-align: right;
+    }
+
+    .venta {
+        @include prodsVenta(30px);
+        @include neoNavbar(0, 5px, 10px);
+        padding: 4rem 9rem 7rem 9rem;
+    }
+
+    .compraLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem 15rem 0 15rem;
+    }
 }

@@ -8,65 +8,22 @@
     @include prods(30px);
     width: 100%
 }
-
-.carrImgs {
-    @include prods(60px);
-}
-
+/*
 .prods {
     @include prodimgs(30px, 0, 10px, 10px);
     padding: 7rem 9rem;
-}
+}*/
 
 .servicios {
     @include prodimgs(30px, 0, 10px, 10px);
     padding: 3rem;
 }
-
-.carrPadding {
-    @include prodimgs(30px, 0, 10px, 10px);
-    padding: 5rem;
-}
-
-.imgCont {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 1.2rem;
-}
-
-.imgLeft {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 4rem;
-}
-
-.padRight {
-    padding-right: 2rem;
-}
-
-.txtLeft {
-    text-align: left;
-}
-
-.imgRight {
-    display: flex;
-    flex-direction: row;
-}
-
-.padLeft {
-    padding-left: 2rem;
-}
-
-.txtRight {
-    text-align: right;
-}
-
+/*
 .venta {
     @include prodsVenta(30px);
     @include neoNavbar(0, 5px, 10px);
     padding: 4rem 9rem 7rem 9rem;
-}
+}*/
 
 .underline {
     text-decoration-line: underline;
@@ -83,13 +40,13 @@
     text-decoration-thickness: 0.5rem;
     text-decoration-skip-ink: none;
 }
-
+/*
 .compraLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2rem 15rem 0 15rem;
-}
+}*/
 
 .servCards {
     padding-bottom: 3rem;

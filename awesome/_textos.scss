@@ -20,20 +20,8 @@ $bold: 700;
     font-size: 1em;
 }
 
-
-/// Variantes del h1 | títulos en general
-.titleLeft {
-    text-align: left;
-    @include titulos;
-}
-
 .titleCenter {
     text-align: center;
-    @include titulos;
-}
-
-.titleRight {
-    text-align: right;
     @include titulos;
 }
 
