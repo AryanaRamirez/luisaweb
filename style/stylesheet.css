@@ -1077,7 +1077,7 @@ form {
 .servCards {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
   padding-right: 1.4rem;
   padding-bottom: 3rem;
 }
