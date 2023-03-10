@@ -8,22 +8,11 @@
     @include prods(30px);
     width: 100%
 }
-/*
-.prods {
-    @include prodimgs(30px, 0, 10px, 10px);
-    padding: 7rem 9rem;
-}*/
 
 .servicios {
     @include prodimgs(30px, 0, 10px, 10px);
     padding: 3rem;
 }
-/*
-.venta {
-    @include prodsVenta(30px);
-    @include neoNavbar(0, 5px, 10px);
-    padding: 4rem 9rem 7rem 9rem;
-}*/
 
 .underline {
     text-decoration-line: underline;
@@ -40,15 +29,12 @@
     text-decoration-thickness: 0.5rem;
     text-decoration-skip-ink: none;
 }
-/*
-.compraLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem 15rem 0 15rem;
-}*/
 
 .servCards {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1.4rem;
     padding-bottom: 3rem;
 }
 
@@ -56,4 +42,9 @@
     object-fit: scale-down;
     height: 50vh;
     width: 100%;
+}
+
+.indexImgs {
+    max-width: 95vw;
+    padding: 0;
 }

@@ -226,6 +226,62 @@ footer {
     color: #383f7b;
     padding-bottom: 1.4rem;
   }
+  /* variables del index */
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 2px 4px #d3d3d3;
+  }
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .indexBio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: normal;
+  }
+  .indexPages {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .index {
+    line-height: 1;
+    margin-top: 1.2rem;
+  }
+  .h2Index {
+    line-height: 1;
+    margin-top: 1rem;
+  }
+  .indexDevice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .prods {
     border-radius: 30px;
     border: 1px solid #fbfaf4;
@@ -294,15 +350,15 @@ footer {
   }
   .gridDesignBio {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 2, 1fr;
     justify-content: center;
   }
   .biografia {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding: 2rem 0;
+    padding: 0;
   }
   .container-img {
     width: 100%;
@@ -347,6 +403,62 @@ footer {
     text-align: center;
     color: #383f7b;
     padding-bottom: 1.4rem;
+  }
+  /* variables del index */
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 2px 4px #d3d3d3;
+  }
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .indexBio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: normal;
+  }
+  .indexPages {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .index {
+    line-height: 1;
+    margin-top: 1.2rem;
+  }
+  .h2Index {
+    line-height: 1;
+    margin-top: 1rem;
+  }
+  .indexDevice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .prods {
     border-radius: 30px;
@@ -437,14 +549,13 @@ footer {
     padding-left: 2rem;
   }
   .container-img {
-    width: auto;
     align-items: end;
     padding-bottom: 1em;
     display: flex;
     justify-content: center;
   }
   .size {
-    width: 1fr;
+    width: 90%;
     height: auto;
   }
   .parrafo {
@@ -482,6 +593,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
+    padding: 1rem;
     border-radius: 30px;
     background: transparent;
     border: 1px solid #DCDDE7;
@@ -520,6 +632,28 @@ footer {
     text-align: right;
     color: #383f7b;
     padding-bottom: 1.4rem;
+  }
+  .indexPages {
+    width: auto;
+  }
+  .indexCards {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1.4rem;
+    padding-bottom: 3rem;
+  }
+  .index {
+    line-height: 1;
+    margin: 1.2rem 0 0.4rem 0;
+  }
+  .h2Index {
+    line-height: 1;
+    margin: 1rem 0 0.4rem 0;
+  }
+  .indexDevice {
+    display: flex;
+    flex-direction: row;
   }
   .prods {
     border-radius: 30px;
@@ -724,16 +858,6 @@ h3 {
   color: #383f7b;
 }
 
-.index {
-  line-height: 1;
-  margin: 1.2rem 0 0.4rem 0;
-}
-
-.h2Index {
-  line-height: 1;
-  margin: 1rem 0 0.4rem 0;
-}
-
 h4 {
   font-size: 1.44rem;
   margin: 3rem 0 1.38rem;
@@ -926,11 +1050,6 @@ form {
   width: 100%;
 }
 
-/*
-.prods {
-    @include prodimgs(30px, 0, 10px, 10px);
-    padding: 7rem 9rem;
-}*/
 .servicios {
   border-radius: 30px;
   border: 1px solid #fbfaf4;
@@ -939,12 +1058,6 @@ form {
   padding: 3rem;
 }
 
-/*
-.venta {
-    @include prodsVenta(30px);
-    @include neoNavbar(0, 5px, 10px);
-    padding: 4rem 9rem 7rem 9rem;
-}*/
 .underline {
   text-decoration-line: underline;
   text-decoration-color: #F1EEA6;
@@ -961,14 +1074,11 @@ form {
   text-decoration-skip-ink: none;
 }
 
-/*
-.compraLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem 15rem 0 15rem;
-}*/
 .servCards {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 1.4rem;
   padding-bottom: 3rem;
 }
 
@@ -976,6 +1086,11 @@ form {
   object-fit: scale-down;
   height: 50vh;
   width: 100%;
+}
+
+.indexImgs {
+  max-width: 95vw;
+  padding: 0;
 }
 
 html {

@@ -94,6 +94,65 @@
         @include titulos;
     }
 
+
+       /* variables del index */
+       .linkBox {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 100%;
+        @include prodsVenta(30px);
+        @include neoNavbar(0, 2px, 6px);
+    }
+
+    .linkGroup {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .indexBio {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        word-wrap: normal;
+    }
+
+    .indexPages {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .indexCards {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+
+    .index {
+        line-height: 1;
+        margin-top: 1.2rem;
+    }
+    
+    .h2Index {
+        line-height: 1;
+        margin-top: 1rem;
+    }
+
+    .indexDevice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     // Productos
     .prods {
         @include prodimgs(30px, 0, 10px, 10px);
@@ -167,8 +226,8 @@
 
     .gridDesignBio {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (2, 1fr);
         justify-content: center;
     }
 
@@ -176,7 +235,7 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        padding: 2rem 0;
+        padding: 0;
     }
 
     .container-img {
@@ -226,6 +285,66 @@
         text-align: center;
         @include titulos;
     }
+
+
+    /* variables del index */
+    .linkBox {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 100%;
+        @include prodsVenta(30px);
+        @include neoNavbar(0, 2px, 6px);
+    }
+
+    .linkGroup {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .indexBio {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        word-wrap: normal;
+    }
+
+    .indexPages {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .indexCards {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+
+    .index {
+        line-height: 1;
+        margin-top: 1.2rem;
+    }
+    
+    .h2Index {
+        line-height: 1;
+        margin-top: 1rem;
+    }
+
+    .indexDevice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 
     // Productos
     .prods {
@@ -325,7 +444,6 @@
     }
 
     .container-img {
-        width: auto;
         align-items: end;
         padding-bottom: 1em;
         display: flex;
@@ -333,7 +451,7 @@
     }
 
     .size {
-        width: 1fr;
+        width: 90%;
         height: auto;
     }
 
@@ -378,6 +496,7 @@
         display: flex;
         flex-direction: column;
         margin: 1rem 0;
+        padding: 1rem;
         @include prodsVenta(30px);
         @include neoNavbar(0, 2px, 6px);
     }
@@ -410,6 +529,35 @@
         text-align: right;
         @include titulos;
     }
+
+    .indexPages {
+        width: auto;
+    }
+
+    .indexCards {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-right: 1.4rem;
+        padding-bottom: 3rem;
+    }
+
+    .index {
+        line-height: 1;
+        margin: 1.2rem 0 0.4rem 0;
+    }
+    
+    .h2Index {
+        line-height: 1;
+        margin: 1rem 0 0.4rem 0;
+    }
+
+    .indexDevice {
+        display: flex;
+        flex-direction: row;
+    }
+
+
 
     // Productos
     .prods {
