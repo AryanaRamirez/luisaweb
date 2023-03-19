@@ -59,3 +59,9 @@ $bold: 700;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.indexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

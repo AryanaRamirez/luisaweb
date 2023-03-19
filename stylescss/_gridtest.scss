@@ -1,0 +1,35 @@
+/* .serviciosCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+} */
+
+.uno {
+    background-color: azure;
+    text-align: center;
+}
+
+.dos {
+    background-color: beige;
+    text-align: center;
+}
+
+.tres {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.cuatro {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+/*         <section class="container">
+            <div class="serviciosCards">
+                <div class="uno">1</div>
+                <div class="dos">2</div>
+                <div class="tres">3</div>
+                <div class="cuatro">4</div>
+            </div>
+        </section> */

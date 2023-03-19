@@ -1,4 +1,15 @@
 @import url("https://use.typekit.net/zjg0exe.css");
+html {
+  font-size: 100%;
+}
+
+/*16px*/
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .parrafo {
   padding: 4rem 8rem 2rem 8rem;
   color: #383f7b;
@@ -57,6 +68,12 @@
   justify-content: space-between;
 }
 
+.indexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .logo {
   height: 6rem;
   width: auto;
@@ -73,6 +90,7 @@
 .navbar {
   background: transparent;
   box-shadow: 0px 20px 40px #d3d3d3;
+  padding: 0;
 }
 
 .nav-ul li a {
@@ -106,7 +124,6 @@ footer {
   font-style: normal;
   color: #fbfaf4;
   bottom: 0;
-  margin-top: 3rem;
   background: transparent;
   box-shadow: 0px -10px 20px #e1e1e1;
 }
@@ -143,571 +160,6 @@ footer {
   padding: 0 0.3rem;
 }
 
-/* Defino las media queries | Breakpoints */
-/* 36rem equivalen al sm de Bootstrap 576px */
-@media screen and (max-width: 36rem) {
-  .ftMain {
-    justify-content: space-around;
-  }
-  .listLinks {
-    display: flex;
-    justify-content: center;
-  }
-  .ftRrss {
-    display: flex;
-    justify-content: center;
-  }
-  .pageintro {
-    text-align: center;
-    padding: 0 1rem 2rem 1rem;
-  }
-  .gridDesignBio {
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: 2, 1fr;
-    justify-content: center;
-    padding: 0;
-  }
-  .biografia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 0.8rem;
-  }
-  .container-img {
-    width: 100%;
-  }
-  .size {
-    width: 100%;
-    height: auto;
-  }
-  .parrafo {
-    padding: 3rem 2rem 1rem 2rem;
-  }
-  .grandeTxt {
-    font-size: 1.1rem;
-    font-weight: 300;
-    letter-spacing: 0.04;
-    line-height: 1.4;
-  }
-  .gridDesignForm {
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: 2, 1fr;
-    justify-content: center;
-    padding-bottom: 4rem;
-  }
-  .map {
-    margin-top: 5rem;
-  }
-  .contenido {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar {
-    margin-bottom: 4rem;
-  }
-  footer {
-    margin-top: 6rem;
-  }
-  .carrPadding {
-    border-radius: 30px;
-    border: 1px solid #fbfaf4;
-    background: transparent;
-    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-    padding: 0;
-  }
-  .carrImgs {
-    border-radius: 30px;
-    background: transparent;
-  }
-  .title {
-    text-align: center;
-    color: #383f7b;
-    padding-bottom: 1.4rem;
-  }
-  /* variables del index */
-  .linkBox {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    padding: 1rem;
-    width: 100%;
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid #DCDDE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 2px 4px #d3d3d3;
-  }
-  .linkGroup {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    text-align: center;
-  }
-  .indexBio {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    word-wrap: normal;
-  }
-  .indexPages {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .indexCards {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 3rem;
-  }
-  .index {
-    line-height: 1;
-    margin-top: 1.2rem;
-  }
-  .h2Index {
-    line-height: 1;
-    margin-top: 1rem;
-  }
-  .indexDevice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .prods {
-    border-radius: 30px;
-    border: 1px solid #fbfaf4;
-    background: transparent;
-    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-    padding: 2rem 1rem;
-  }
-  .imgCont {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-  }
-  .imgLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-  }
-  .padRight {
-    padding-right: 0;
-  }
-  .txtLeft {
-    text-align: center;
-  }
-  .imgRight {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .padLeft {
-    padding-left: 2rem;
-  }
-  .txtRight {
-    text-align: center;
-  }
-  .venta {
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid #DCDDE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 5px 10px #d3d3d3;
-    padding: 2rem 1rem 1rem 1rem;
-  }
-  .compraLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 0;
-  }
-}
-/* 62rem equivalen al lg de Bootstrap 992px */
-@media screen and (min-width: 37rem) and (max-width: 62rem) {
-  .ftMain {
-    justify-content: space-evenly;
-  }
-  .container {
-    padding: 0;
-    margin: 4rem auto;
-  }
-  .pageintro {
-    text-align: center;
-    padding-right: 0.4rem;
-  }
-  .gridDesignBio {
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: 2, 1fr;
-    justify-content: center;
-  }
-  .biografia {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 0;
-  }
-  .container-img {
-    width: 100%;
-  }
-  .size {
-    width: 100%;
-    height: auto;
-  }
-  .parrafo {
-    padding: 4rem 5rem 2rem 5rem;
-  }
-  .grandeTxt {
-    font-size: 1.25rem;
-    font-weight: 300;
-    letter-spacing: 0.04;
-    line-height: 1.6;
-  }
-  .gridDesignForm {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: 2, 1fr;
-    justify-content: center;
-    padding: 4rem 0 4rem 0;
-  }
-  .contenido {
-    display: flex;
-    flex-direction: column;
-  }
-  .carrPadding {
-    border-radius: 20px;
-    border: 1px solid #fbfaf4;
-    background: transparent;
-    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-    padding: 3rem;
-  }
-  .carrImgs {
-    border-radius: 30px;
-    background: transparent;
-  }
-  .title {
-    text-align: center;
-    color: #383f7b;
-    padding-bottom: 1.4rem;
-  }
-  /* variables del index */
-  .linkBox {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    padding: 1rem;
-    width: 100%;
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid #DCDDE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 2px 4px #d3d3d3;
-  }
-  .linkGroup {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    text-align: center;
-  }
-  .indexBio {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    word-wrap: normal;
-  }
-  .indexPages {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .indexCards {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 3rem;
-  }
-  .index {
-    line-height: 1;
-    margin-top: 1.2rem;
-  }
-  .h2Index {
-    line-height: 1;
-    margin-top: 1rem;
-  }
-  .indexDevice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .prods {
-    border-radius: 30px;
-    border: 1px solid #fbfaf4;
-    background: transparent;
-    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-    padding: 2rem 4rem;
-  }
-  .imgCont {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-  }
-  .imgLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-  }
-  .padRight {
-    padding-right: 0;
-  }
-  .txtLeft {
-    text-align: center;
-  }
-  .imgRight {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .padLeft {
-    padding-left: 2rem;
-  }
-  .txtRight {
-    text-align: center;
-  }
-  .venta {
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid #DCDDE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 5px 10px #d3d3d3;
-    padding: 2rem 2rem 1rem 2rem;
-  }
-  .compraLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 0;
-  }
-}
-/* Para resoluciones mayores a 992px */
-@media screen and (min-width: 62.063rem) {
-  .ftMain {
-    justify-content: space-evenly;
-  }
-  .navbar-expand-lg .navbar-nav {
-    padding-right: 2rem;
-  }
-  .navbar-brand {
-    padding-left: 2rem;
-  }
-  .container {
-    padding: 0;
-    margin: 7rem auto;
-  }
-  .pageintro {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    padding-right: 1.4rem;
-  }
-  .gridDesignBio {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 1em;
-    grid-template-rows: auto;
-  }
-  .biografia {
-    width: 1.5fr;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    word-wrap: normal;
-    padding-left: 2rem;
-  }
-  .container-img {
-    align-items: end;
-    padding-bottom: 1em;
-    display: flex;
-    justify-content: center;
-  }
-  .size {
-    width: 90%;
-    height: auto;
-  }
-  .parrafo {
-    padding: 5rem 6rem 3rem 6rem;
-  }
-  .grandeTxt {
-    font-size: 1.563rem;
-    font-weight: 300;
-    letter-spacing: 0.04;
-    line-height: 1.6;
-  }
-  .gridDesignForm {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: auto;
-    padding: 2rem 0;
-  }
-  .contenido {
-    display: flex;
-    flex-direction: column;
-    padding-right: 2.4rem;
-  }
-  .pDeco {
-    font-family: "good-karma-regular", sans-serif;
-    font-size: 2rem;
-    color: #383f7b;
-  }
-  .h2Deco {
-    font-family: "good-karma-regular", sans-serif;
-    font-size: 2.6rem;
-    color: #383f7b;
-  }
-  /* variables del index */
-  .linkBox {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid #DCDDE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 2px 4px #d3d3d3;
-  }
-  .linkGroup {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    text-align: center;
-  }
-  .indexBio {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    word-wrap: normal;
-  }
-  .carrPadding {
-    border-radius: 30px;
-    border: 1px solid #fbfaf4;
-    background: transparent;
-    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-    padding: 5rem;
-  }
-  .carrImgs {
-    border-radius: 40px;
-    background: transparent;
-  }
-  .title {
-    text-align: right;
-    color: #383f7b;
-    padding-bottom: 1.4rem;
-  }
-  .indexPages {
-    width: auto;
-  }
-  .indexCards {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    padding-right: 1.4rem;
-    padding-bottom: 3rem;
-  }
-  .index {
-    line-height: 1;
-    margin: 1.2rem 0 0.4rem 0;
-  }
-  .h2Index {
-    line-height: 1;
-    margin: 1rem 0 0.4rem 0;
-  }
-  .indexDevice {
-    display: flex;
-    flex-direction: row;
-  }
-  .prods {
-    border-radius: 30px;
-    border: 1px solid #fbfaf4;
-    background: transparent;
-    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-    padding: 7rem 9rem;
-  }
-  .imgCont {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 1.2rem;
-  }
-  .imgLeft {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 4rem;
-  }
-  .padRight {
-    padding-right: 2rem;
-  }
-  .txtLeft {
-    text-align: left;
-  }
-  .imgRight {
-    display: flex;
-    flex-direction: row;
-  }
-  .padLeft {
-    padding-left: 2rem;
-  }
-  .txtRight {
-    text-align: right;
-  }
-  .venta {
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid #DCDDE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 5px 10px #d3d3d3;
-    padding: 4rem 9rem 7rem 9rem;
-  }
-  .compraLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem 15rem 0 15rem;
-  }
-}
 .bg-body-mine {
   font-family: "titillium-web", sans-serif;
   font-weight: 300;
@@ -753,6 +205,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.indexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .contIntro {
@@ -815,10 +273,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 section {
-  padding: 2rem 0;
+  margin: 4rem 0;
 }
 
 p {
@@ -826,7 +285,7 @@ p {
 }
 
 .pMargin {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -1011,7 +470,7 @@ form {
   animation: button 2s;
 }
 
-.indexButton:hover {
+.linkBox:hover {
   animation: indexButton 3s;
 }
 
@@ -1041,7 +500,10 @@ form {
 .productos {
   border-radius: 30px;
   background: transparent;
-  width: 20rem;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
 }
 
 .services {
@@ -1050,14 +512,10 @@ form {
   width: 100%;
 }
 
-.servicios {
-  border-radius: 30px;
-  border: 1px solid #fbfaf4;
-  background: transparent;
-  box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
-  padding: 3rem;
-}
-
+/* .servicios {
+    @include prodimgs(30px, 0, 10px, 10px);
+    padding: 3rem;
+} */
 .underline {
   text-decoration-line: underline;
   text-decoration-color: #F1EEA6;
@@ -1091,17 +549,708 @@ form {
 .indexImgs {
   max-width: 95vw;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-html {
-  font-size: 100%;
+/* .serviciosCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+} */
+.uno {
+  background-color: azure;
+  text-align: center;
 }
 
-/*16px*/
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
+.dos {
+  background-color: beige;
+  text-align: center;
+}
+
+.tres {
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+.cuatro {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+/*         <section class="container">
+            <div class="serviciosCards">
+                <div class="uno">1</div>
+                <div class="dos">2</div>
+                <div class="tres">3</div>
+                <div class="cuatro">4</div>
+            </div>
+        </section> */
+/* Defino las media queries | Breakpoints */
+/* 36rem equivalen al sm de Bootstrap 576px */
+@media screen and (max-width: 36rem) {
+  .ftMain {
+    justify-content: space-around;
+  }
+  .container {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  .listLinks {
+    display: flex;
+    justify-content: center;
+  }
+  .ftRrss {
+    display: flex;
+    justify-content: center;
+  }
+  .pageintro {
+    text-align: center;
+    padding: 0 1rem 2rem 1rem;
+  }
+  .gridDesignBio {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 2, 1fr;
+    justify-content: center;
+    padding: 0;
+  }
+  .biografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0.8rem;
+  }
+  .container-img {
+    width: 100%;
+  }
+  .size {
+    width: 100%;
+    height: auto;
+  }
+  .parrafo {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .grandeTxt {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.04;
+    line-height: 1.4;
+  }
+  .gridDesignForm {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 2, 1fr;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  .map {
+    margin-top: 5rem;
+  }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrPadding {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 0;
+  }
+  .carrImgs {
+    border-radius: 30px;
+    background: transparent;
+  }
+  .title {
+    text-align: center;
+    color: #383f7b;
+    padding-bottom: 1.4rem;
+  }
+  /* variables del index */
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 2px 4px #d3d3d3;
+  }
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .indexBio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: normal;
+  }
+  .indexPages {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .index {
+    line-height: 1;
+    margin-top: 1.2rem;
+  }
+  .h2Index {
+    line-height: 1;
+    margin-top: 1rem;
+  }
+  .indexDevice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo {
+    text-align: center;
+    margin: 0;
+  }
+  .prods {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .fotoLeft {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .textoLeft {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+  }
+  .orden {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fotoRight {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .textoRight {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+  }
+  .pDeco {
+    font-family: "good-karma-regular", sans-serif;
+    font-size: 2rem;
+    color: #383f7b;
+    text-align: center;
+  }
+  .precio {
+    text-align: center;
+  }
+  .venta {
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 5px 10px #d3d3d3;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .compraLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  main {
+    margin: 2rem 0;
+  }
+  .serviciosCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3em;
+  }
+  .servicios {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 1rem;
+  }
+  .programasCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+/* 62rem equivalen al lg de Bootstrap 992px */
+@media screen and (min-width: 37rem) and (max-width: 62rem) {
+  .ftMain {
+    justify-content: space-evenly;
+    margin: 1rem 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .pageintro {
+    text-align: center;
+    padding-right: 0.4rem;
+  }
+  .gridDesignBio {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 2, 1fr;
+    justify-content: center;
+  }
+  .biografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+  }
+  .container-img {
+    width: 100%;
+  }
+  .size {
+    width: 100%;
+    height: auto;
+  }
+  .parrafo {
+    padding: 1rem 5rem 3rem 5rem;
+  }
+  .grandeTxt {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0.04;
+    line-height: 1.6;
+  }
+  .gridDesignForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 2, 1fr;
+    justify-content: center;
+    padding: 4rem 0 4rem 0;
+  }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrPadding {
+    border-radius: 20px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 2rem;
+  }
+  .carrImgs {
+    border-radius: 30px;
+    background: transparent;
+  }
+  .title {
+    text-align: center;
+    color: #383f7b;
+    padding-bottom: 1.4rem;
+  }
+  /* variables del index */
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 2px 4px #d3d3d3;
+  }
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .indexBio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: normal;
+  }
+  .indexPages {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .indexCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .index {
+    line-height: 1;
+    margin-top: 1.2rem;
+  }
+  .h2Index {
+    line-height: 1;
+    margin-top: 1rem;
+  }
+  .indexDevice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo {
+    text-align: center;
+    margin: 0;
+  }
+  .prods {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 3rem 5rem 5rem 5rem;
+  }
+  .fotoLeft {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .textoLeft {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+  }
+  .orden {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fotoRight {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .textoRight {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+  }
+  .pDeco {
+    font-family: "good-karma-regular", sans-serif;
+    font-size: 2rem;
+    color: #383f7b;
+    text-align: center;
+  }
+  .precio {
+    text-align: center;
+  }
+  .venta {
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 5px 10px #d3d3d3;
+    padding: 1rem 5rem 3rem 5rem;
+  }
+  .compraLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  main {
+    margin: 2rem 0;
+  }
+  .serviciosCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3em;
+  }
+  .servicios {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 2rem;
+  }
+  .programasCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+  }
+}
+/* Para resoluciones mayores a 992px */
+@media screen and (min-width: 62.063rem) {
+  .ftMain {
+    justify-content: space-evenly;
+  }
+  .navbar-expand-lg .navbar-nav {
+    padding-right: 2rem;
+  }
+  .navbar-brand {
+    padding-left: 2rem;
+  }
+  .container {
+    padding: 0;
+  }
+  .pageintro {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1.4rem;
+  }
+  .gridDesignBio {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1em;
+    grid-template-rows: auto;
+  }
+  .biografia {
+    width: 1.5fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    word-wrap: normal;
+    padding-left: 2rem;
+  }
+  .container-img {
+    align-items: end;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+  }
+  .size {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .parrafo {
+    padding: 2rem 6rem 3rem 6rem;
+  }
+  .grandeTxt {
+    font-size: 1.563rem;
+    font-weight: 300;
+    letter-spacing: 0.04;
+    line-height: 1.6;
+  }
+  .gridDesignForm {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    padding: 2rem 0;
+  }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2.4rem;
+  }
+  .pDeco {
+    font-family: "good-karma-regular", sans-serif;
+    font-size: 2rem;
+    color: #383f7b;
+  }
+  .h2Deco {
+    font-family: "good-karma-regular", sans-serif;
+    font-size: 2.6rem;
+    color: #383f7b;
+  }
+  /* variables del index */
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 2px 4px #d3d3d3;
+  }
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .indexBio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    word-wrap: normal;
+  }
+  .carrPadding {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 5rem;
+  }
+  .carrImgs {
+    border-radius: 40px;
+    background: transparent;
+  }
+  .title {
+    text-align: right;
+    color: #383f7b;
+    padding-bottom: 1.4rem;
+  }
+  .indexPages {
+    width: auto;
+  }
+  .indexCards {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1.4rem;
+  }
+  .index {
+    line-height: 1;
+    margin: 1.2rem 0 0.4rem 0;
+  }
+  .h2Index {
+    line-height: 1;
+    margin: 1rem 0 0.4rem 0;
+  }
+  .indexDevice {
+    display: flex;
+    flex-direction: row;
+  }
+  .cont {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em 1em;
+  }
+  .titulo {
+    text-align: left;
+    margin: 0;
+    padding-left: 2rem;
+  }
+  .prods {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 4rem 9rem 6rem 9rem;
+  }
+  .fotoLeft {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+  }
+  .textoLeft {
+    display: flex;
+    align-items: flex-end;
+    grid-column: 3/-1;
+  }
+  .fotoRight {
+    display: flex;
+    justify-content: center;
+    grid-column: 4/6;
+  }
+  .textoRight {
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    grid-column: 1/4;
+  }
+  .venta {
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #DCDDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 5px 10px #d3d3d3;
+    padding: 4rem 9rem 7rem 9rem;
+  }
+  .compraLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 11rem 0 11rem;
+  }
+  main {
+    margin: 4rem 0;
+  }
+  .serviciosCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+  }
+  .servicios {
+    border-radius: 30px;
+    border: 1px solid #fbfaf4;
+    background: transparent;
+    box-shadow: 0 -10px 10px #fbfbfb, 0 10px 10px #d3d3d3;
+    padding: 3rem;
+  }
+  .programasCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 3em;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

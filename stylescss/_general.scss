@@ -11,10 +11,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 section {
-    padding: 2rem 0;
+    margin: 4rem 0;
 }
 
 p {
@@ -22,7 +23,7 @@ p {
 }
 
 .pMargin {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 h1,

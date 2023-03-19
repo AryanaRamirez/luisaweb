@@ -15,7 +15,8 @@
 }
 
 .navbar {
-    @include neoNavbar(0px , 20px , 40px)
+    @include neoNavbar(0px , 20px , 40px);
+    padding: 0;
 }
 
 .nav-ul li a {

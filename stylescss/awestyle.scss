@@ -1,0 +1,25 @@
+@import url("https://use.typekit.net/zjg0exe.css");
+
+html {
+    font-size: 100%;
+}
+
+/*16px*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "variables";
+@import "navbar";
+@import "footer";
+@import "textos";
+@import "accordion";
+@import "general";
+@import "forms";
+@import "animaciones";
+@import "images";
+@import "gridtest";
+@import "mediaQueries";
