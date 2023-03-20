@@ -50,70 +50,78 @@
         </div>
     </nav>
 
-    <!-- Uso de Bootstrap para hacer la división de la página en dos segmentos y definición del Responsive -->
-    <section class="container">
-        <div class="row">
-            <div class="pageintro col-lg-5 col-md-12 col-sm-12">
-                <h1 class="title underline">&#20;Conoce mi Videoteca</h1>
-                <p>He organizado los videos que he publicado para que puedas <span class="txtresaltado">elegir el
-                        contenido que m&aacute;s te guste</span> y encontrarlo con facilidad desde mi Web.
-                    ¡Podr&aacute;s encontrar m&aacute;s contenido en mis canales de YouTube!</p>
-                <div class="vidslinks">
-                    <p class="vids"><a class="canales" href="https://www.youtube.com/@luisahurtado-coach7550/featured"
-                            target="_blank"><img src="../imgs/iconyoutube.png" alt="YouTube icon"
-                                style="padding-right: 0.4rem;">Luisa Hurtado</a></p>
-                    <p class="vids"><a class="canales" href="https://www.youtube.com/@redescubriendome1125/featured"
-                            target="_blank"><img src="../imgs/iconyoutube.png" alt="YouTube icon"
-                                style="padding-right: 0.4rem;">Redescubri&eacute;ndome</a></p>
+
+
+    <main>
+
+        <section class="container">
+            <div class="videosCards">
+                <div class="pageintro">
+                    <h1 class="title underline">&#20;Conoce mi Videoteca</h1>
+                    <p>He organizado los videos que he publicado para que puedas <span class="txtresaltado">elegir el
+                            contenido que m&aacute;s te guste</span> y encontrarlo con facilidad desde mi Web.</p>
+
+                    <h2 class="title underline">&#20;Mira m&aacute;s videos</h2>
+                    <p>¡Podr&aacute;s encontrar <span class="txtresaltado">m&aacute;s contenido</span> en mis canales de
+                        YouTube! Mantente actualizado con toda la informaci&oacute;n que vaya subiendo a tu
+                        disposici&oacute;n</p>
+                    <div class="vidslinks">
+                        <p class="vids"><a class="canales"
+                                href="https://www.youtube.com/@luisahurtado-coach7550/featured" target="_blank"><img
+                                    src="../imgs/iconyoutube.png" alt="YouTube icon"
+                                    style="padding-right: 0.4rem;">Luisa Hurtado</a></p>
+                        <p class="vids"><a class="canales" href="https://www.youtube.com/@redescubriendome1125/featured"
+                                target="_blank"><img src="../imgs/iconyoutube.png" alt="YouTube icon"
+                                    style="padding-right: 0.4rem;">Redescubri&eacute;ndome</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12">
+
+
+
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <h3 class="accordion-header" id="panelsStayOpen-headingOne" style="margin-top: 0;">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                 aria-controls="panelsStayOpen-collapseOne">
                                 Redescubri&eacute;ndome
                             </button>
-                        </h2>
+                        </h3>
 
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body vidsWrap">
-                                <!-- la clase vidsWrap organiza los elementos dentro del cuerpo del accordion, sin embargo,
-                                    no logré que se alinearan también al margen izquierdo, me gustaría saber que me estoy olvidando para lograrlo, gracias! -->
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/nj7Ayt4skDA" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/nj7Ayt4skDA"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Presentaci&oacute;n Luisa Hurtado</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/9rZl0dGX_FM" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/9rZl0dGX_FM"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Vivir en aut&eacute;ntica Libertad</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/y9Grk19sACY" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/y9Grk19sACY"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Alimentaci&oacute;n energ&eacute;tica</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/G6SZLcXMjhc" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/G6SZLcXMjhc"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Relaciones dif&iacute;ciles</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/zfU8UFT3b8E" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/zfU8UFT3b8E"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Testimonios de servicio</h5>
@@ -123,54 +131,54 @@
 
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <h3 class="accordion-header" id="panelsStayOpen-headingTwo" style="margin-top: 0;">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
                                 Conoce la energ&iacute;a de tus Chakras
                             </button>
-                        </h2>
+                        </h3>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body vidsWrap">
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/RhoigT951wQ" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/RhoigT951wQ"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Equilibra tus Chakras</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/zQMaFuEDaDc" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/zQMaFuEDaDc"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Chakra Sacro/h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/5PIvG6op7Qw" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/5PIvG6op7Qw"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Chakra Plexo Solar</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/CXCW0RUly0I" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/CXCW0RUly0I"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Chakra Coraz&oacute;n</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/Yhbjaq4ZGqM" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/Yhbjaq4ZGqM"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Chakra Garganta</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/urBntAuNXzQ" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/urBntAuNXzQ"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Chakra Tercer Ojo</h5>
@@ -180,40 +188,40 @@
                     </div>
 
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <h3 class="accordion-header" id="panelsStayOpen-headingThree" style="margin-top: 0;">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
                                 Coaching
                             </button>
-                        </h2>
+                        </h3>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingThree">
                             <div class="accordion-body vidsWrap">
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/TfO-4gAtw-I" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/TfO-4gAtw-I"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Comunicai&oacute;n No Violenta</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/RTMy1AooIl0" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/RTMy1AooIl0"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Empat&iacute;a y solidaridad</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/Myqv3vzhwA8" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/Myqv3vzhwA8"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Cnstrucci&oacute;n de la confianza</h5>
                                 </div>
                                 <div class="vidCard">
-                                    <iframe src="https://www.youtube.com/embed/Hi1VdousuB8" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/Hi1VdousuB8"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                     <h5>Liviandad o gravedad</h5>
@@ -223,11 +231,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+    </main>
 
 
-
-    </section>
 
     <footer>
         <!-- Footer main -->
@@ -278,7 +286,7 @@
                             src="../imgs/iconinstagram.png" alt="Instagram"></a>
                     <a href="https://t.me/luisahurtadooficial" target="_blank"><img class="espacio"
                             src="../imgs/icontelegram.png" alt="Telegram"></a>
-                    <a href="https://api.whatsapp.com/send?phone=51996531111&text=Hola!%20esta%20es%20una%20prueba%20de%20mensaje%20desde%20mi%20web"
+                    <a href="https://api.whatsapp.com/send?phone=51996531111&text=Hola!%20me%20gustaría%20obtener%20información,%20por%20favor%20contáctame,%20gracias!"
                         target="_blank"><img class="espacio" src="../imgs/iconwhatsapp.png" alt="WhatsApp"></a>
                 </div>
             </div>

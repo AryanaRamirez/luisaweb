@@ -37,6 +37,10 @@ $bold: 700;
     @include neoTexto(30px , 10px);
 }
 
+.contParrafo {
+    @include neoTexto(30px , 10px);
+}
+
 .firma {
     font-family: $decorative;
     font-weight: $regular;

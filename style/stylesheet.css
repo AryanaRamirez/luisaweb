@@ -10,7 +10,7 @@ html {
   padding: 0;
 }
 
-.parrafo {
+.contParrafo, .parrafo {
   padding: 4rem 8rem 2rem 8rem;
   color: #383f7b;
   text-align: center;
@@ -40,6 +40,12 @@ html {
 }
 
 .parrafo {
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
+}
+
+.contParrafo {
   border-radius: 30px;
   background: transparent;
   box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
@@ -160,6 +166,10 @@ footer {
   padding: 0 0.3rem;
 }
 
+.espacio:hover {
+  box-shadow: 0 5px 10px #e1e1e1;
+}
+
 .bg-body-mine {
   font-family: "titillium-web", sans-serif;
   font-weight: 300;
@@ -179,6 +189,12 @@ footer {
 }
 
 .parrafo {
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
+}
+
+.contParrafo {
   border-radius: 30px;
   background: transparent;
   box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #fbfbfb;
@@ -226,6 +242,10 @@ footer {
   justify-content: space-around;
 }
 
+.accordion {
+  margin-top: 2.7rem;
+}
+
 .accordion-item {
   color: #34536e;
   background-color: transparent;
@@ -247,6 +267,7 @@ footer {
 .accordion-button:focus {
   background-color: #DCDDE7;
   color: #58618b;
+  box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -420,7 +441,7 @@ form {
 
 .map {
   width: 100%;
-  height: 70%;
+  height: auto;
 }
 
 .mapItems {
@@ -555,7 +576,7 @@ form {
   justify-content: flex-end;
 }
 
-/* .serviciosCards {
+/* .contactoCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -564,21 +585,41 @@ form {
 .uno {
   background-color: azure;
   text-align: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  border: 1px solid #000;
 }
 
 .dos {
   background-color: beige;
   text-align: center;
+  grid-column: 3/-1;
+  grid-row: 1/2;
+  border: 1px solid #000;
 }
 
 .tres {
   background-color: blanchedalmond;
   text-align: center;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  border: 1px solid #000;
 }
 
 .cuatro {
   background-color: aquamarine;
   text-align: center;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  border: 1px solid #000;
+}
+
+.cinco {
+  background-color: bisque;
+  text-align: center;
+  grid-column: 4/-1;
+  grid-row: 3/4;
+  border: 1px solid #000;
 }
 
 /*         <section class="container">
@@ -589,6 +630,26 @@ form {
                 <div class="cuatro">4</div>
             </div>
         </section> */
+/*         <section class="container">
+<div class="contactoCards">
+    <div class="uno">1</div>
+    <div class="dos">2</div>
+    <div class="tres">3</div>
+    <div class="cuatro">4</div>
+    <div class="cinco">5</div>
+</div>
+</section>
+
+
+<section class="container">
+<div class="contactoCards">
+    <div class="container-img">1</div>
+    <div class="biografia">2</div>
+    <div class="contParrafo">3</div>
+    <div class="contactForm">4</div>
+    <div class="mapArea">5</div>
+</div>
+</section> */
 /* Defino las media queries | Breakpoints */
 /* 36rem equivalen al sm de Bootstrap 576px */
 @media screen and (max-width: 36rem) {
@@ -815,6 +876,12 @@ form {
     grid-template-rows: repeat(2, 1fr);
     gap: 2em;
   }
+  .videosCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 1em;
+  }
 }
 /* 62rem equivalen al lg de Bootstrap 992px */
 @media screen and (min-width: 37rem) and (max-width: 62rem) {
@@ -1030,6 +1097,12 @@ form {
     grid-template-rows: repeat(2, 1fr);
     gap: 3em;
   }
+  .videosCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 2em;
+  }
 }
 /* Para resoluciones mayores a 992px */
 @media screen and (min-width: 62.063rem) {
@@ -1049,7 +1122,6 @@ form {
     display: flex;
     flex-direction: column;
     text-align: right;
-    padding-right: 1.4rem;
   }
   .gridDesignBio {
     display: grid;
@@ -1057,20 +1129,20 @@ form {
     gap: 1em;
     grid-template-rows: auto;
   }
-  .biografia {
-    width: 1.5fr;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    word-wrap: normal;
-    padding-left: 2rem;
-  }
-  .container-img {
-    align-items: end;
-    padding-bottom: 1em;
-    display: flex;
-    justify-content: center;
-  }
+  /* .biografia {
+      width: 1.5fr;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      word-wrap: normal;
+      padding-left: 2rem;
+  } */
+  /* .container-img {
+      align-items: end;
+      padding-bottom: 1em;
+      display: flex;
+      justify-content: center;
+  } */
   .size {
     width: 90%;
     height: auto;
@@ -1250,6 +1322,51 @@ form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 3em;
+  }
+  .videosCards {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 3em;
+  }
+  .contactoCards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 3em;
+  }
+  .container-img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .biografia {
+    text-align: left;
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .contParrafo {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 4rem 6rem 3rem 6rem;
+  }
+  .contactForm {
+    text-align: left;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .mapArea {
+    text-align: left;
+    grid-column: 4/-1;
+    grid-row: 3/4;
   }
 }
 

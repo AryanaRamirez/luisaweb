@@ -13,6 +13,10 @@
 }
 
 
+.accordion {
+    margin-top: 2.7rem;
+}
+
 .accordion-item {
     color: $mid-blue;
     background-color: transparent;
@@ -34,6 +38,7 @@
 .accordion-button:focus {
     background-color: $lightest-violet;
     color: $mid-violet;
+    box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
