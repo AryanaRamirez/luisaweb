@@ -323,13 +323,13 @@ h1 {
   margin-top: 0;
   font-size: 2.488rem;
   margin: 3rem 0 1.38rem;
-  color: #58618b;
+  color: #383f7b;
 }
 
 h2 {
   font-size: 2.074rem;
   margin: 3rem 0 1.38rem;
-  color: #58618b;
+  color: #383f7b;
 }
 
 h3 {
@@ -1129,27 +1129,13 @@ form {
     gap: 1em;
     grid-template-rows: auto;
   }
-  /* .biografia {
-      width: 1.5fr;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      word-wrap: normal;
-      padding-left: 2rem;
-  } */
-  /* .container-img {
-      align-items: end;
-      padding-bottom: 1em;
-      display: flex;
-      justify-content: center;
-  } */
   .size {
     width: 90%;
     height: auto;
     margin-bottom: 1rem;
   }
   .parrafo {
-    padding: 2rem 6rem 3rem 6rem;
+    padding: 3rem 6rem 3rem 6rem;
   }
   .grandeTxt {
     font-size: 1.563rem;
