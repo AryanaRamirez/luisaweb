@@ -25,14 +25,6 @@
         padding: 0 1rem 2rem 1rem;
     }
 
-    .gridDesignBio {
-        display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (2, 1fr);
-        justify-content: center;
-        padding: 0;
-    }
-
     .biografia {
         display: flex;
         flex-direction: column;
@@ -50,7 +42,7 @@
     }
 
     .parrafo {
-        padding: 1rem 1rem 2rem 1rem;
+        padding: 2rem 1rem 0 1rem;
     }
 
     .grandeTxt {
@@ -60,16 +52,8 @@
         line-height: 1.4;
     }
 
-    .gridDesignForm {
-        display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (2, 1fr);
-        justify-content: center;
-        padding-bottom: 4rem;
-    }
-
     .map {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     .contenido {
@@ -90,7 +74,6 @@
         text-align: center;
         @include titulos;
     }
-
 
     /* variables del index */
     .linkBox {
@@ -147,8 +130,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 1rem;
     }
-
 
     // Productos
     .cont {
@@ -255,7 +238,45 @@
         grid-template-rows: 2fr;
         gap: 1em;
     }
+
+    // Contacto
+
+    .container-img {
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .biografia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .contactForm {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .mapArea {
+        text-align: center;
+    }
+
+    .map {
+        padding: 0 1rem;
+    }
+
+    .contParrafo {
+        padding: 3rem 2rem 3rem 2rem;
+        margin-top: 2rem;
+    }
 }
+
 
 
 /* 62rem equivalen al lg de Bootstrap 992px */
@@ -272,13 +293,6 @@
     .pageintro {
         text-align: center;
         padding-right: 0.4rem;
-    }
-
-    .gridDesignBio {
-        display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (2, 1fr);
-        justify-content: center;
     }
 
     .biografia {
@@ -308,13 +322,8 @@
         line-height: 1.6;
     }
 
-    .gridDesignForm {
-        width: 100%;
-        display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (2, 1fr);
-        justify-content: center;
-        padding: 4rem 0 4rem 0;
+    .map {
+        margin-top: 4rem;
     }
 
     .contenido {
@@ -335,7 +344,6 @@
         text-align: center;
         @include titulos;
     }
-
 
     /* variables del index */
     .linkBox {
@@ -392,9 +400,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 1rem;
     }
-
-
 
     // Productos
     .cont {
@@ -502,7 +509,14 @@
         gap: 2em;
     }
 
+    // Contacto
+
+    .contParrafo {
+        padding: 3rem 2rem 3rem 2rem;
+        margin: 3rem 0;
+    }
 }
+
 
 
 /* Para resoluciones mayores a 992px */
@@ -529,13 +543,6 @@
         text-align: right;
     }
 
-    .gridDesignBio {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 1em;
-        grid-template-rows: auto;
-    }
-
     .size {
         width: 90%;
         height: auto;
@@ -551,13 +558,6 @@
         font-weight: 300;
         letter-spacing: 0.04;
         line-height: 1.6;
-    }
-
-    .gridDesignForm {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: auto;
-        padding: 2rem 0;
     }
 
     .contenido {
@@ -642,8 +642,6 @@
         display: flex;
         flex-direction: row;
     }
-
-
 
     // Productos
 

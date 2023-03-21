@@ -18,11 +18,13 @@ $bold: 700;
     font-weight: $light;
     font-style: normal;
     font-size: 1em;
+    font-display: swap;
 }
 
 .titleCenter {
     text-align: center;
     @include titulos;
+    font-display: swap;
 }
 
 

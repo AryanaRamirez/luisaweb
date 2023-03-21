@@ -5,7 +5,6 @@ footer {
     font-style: normal;
     color: $white;
     bottom: 0;
-//    margin-top: 3rem;
     @include neoFooter(0px , 10px , 20px)
 }
 
