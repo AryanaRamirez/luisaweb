@@ -120,6 +120,11 @@ $dark-border: $slim-border $dark-violet;
     box-shadow: $ejex $ejey ($ejey*2) $darkGray;
 }
 
+@mixin neoNavTop($ejex, $ejey, $blur){
+    background: transparent;
+    box-shadow: $ejex $ejey (-($ejey*2));
+}
+
 @mixin neoFooter($ejex, $ejey, $blur) {
     background: transparent;
     box-shadow: $ejex (-$ejey) ($ejey*2) $lightGray;
