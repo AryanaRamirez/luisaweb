@@ -263,12 +263,20 @@
         padding: 0 1rem;
     }
 
+    .contactReviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+
     .mapArea {
         text-align: center;
     }
 
     .map {
-        padding: 0 1rem;
+        padding: 0;
     }
 
     .contParrafo {
@@ -773,14 +781,28 @@
         text-align: left;
         grid-column: 1/4;
         grid-row: 3/4;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+    }
+
+    .contactReviews {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        height: fit-content;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 1px solid $lightest-violet;
+        border-radius: 30px;
     }
 
     .mapArea {
         text-align: left;
         grid-column: 4/-1;
         grid-row: 3/4;
+        height: fit-content;
     }
 }
