@@ -81,6 +81,14 @@ small,
     margin-top: 0.5rem;
 }
 
+.text_ruc {
+    font-size: 0.833rem;
+    font-weight: $light;
+    color: $dark-violet;
+    margin-top: -1rem;
+//    line-height: -0.8rem;
+}
+
 
 /// nesting aplicado a etiqueta a
 a {

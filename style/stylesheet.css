@@ -368,6 +368,13 @@ small,
   margin-top: 0.5rem;
 }
 
+.text_ruc {
+  font-size: 0.833rem;
+  font-weight: 300;
+  color: #383f7b;
+  margin-top: -1rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
